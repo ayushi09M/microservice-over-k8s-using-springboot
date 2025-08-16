@@ -1,0 +1,21 @@
+package com.learnToCode.accounts.service;
+
+import com.learnToCode.accounts.dto.CustomerDTO;
+
+public interface IAccountsService {
+
+    /**
+     *
+     * @param customerDTO
+     */
+    void createAccount(CustomerDTO customerDTO);
+
+    /**
+     *
+     * @param mobileNumber
+     * @return Account detail based on given mobile Number
+     */
+    CustomerDTO fetchAccount(String mobileNumber);
+
+    boolean updateAccount(CustomerDTO customerDTO);
+}
